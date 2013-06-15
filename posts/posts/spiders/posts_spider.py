@@ -12,8 +12,7 @@ class PostsSpider(BaseSpider):
     
     def parse(self, response):
         hxs = HtmlXPathSelector(response)
-        sites = hxs.select('//*[@id="primary"]/div[@id]')
-        
+        sites = hxs.select("//div[@class='entry hentry']")        
         items = []
         
         
