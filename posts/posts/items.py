@@ -10,5 +10,5 @@ class PostsItem(Item):
     titulo = Field()
     autor = Field()
     contenido = Field()
-    categorias = Field()
-    etiquetas = Field()
+    cat = Field()
+    tag = Field()
