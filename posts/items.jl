@@ -1,0 +1,5 @@
+{"autor": ["admin"], "titulo": ["Quinto Campus de Software Libre de la UGR."], "tag": ["campus infantil", "campus urbanos", "cisl", "Escuela TIC 2.0", "programación", "python", "scratch"], "cat": ["Campus infantil", "Formación", "scratch"]}
+{"autor": ["Serafín Vélez Barrera"], "titulo": ["Finalizada la VII Campaña de Donación de material informático"], "tag": ["campaña", "desarrollo local", "donación", "equipos", "impresoras", "portátil", "portatiles", "proyectores", "taller"], "cat": ["Cronica", "Donación de equipos"]}
+{"autor": ["Makova"], "titulo": ["Crónica #CUSL7"], "tag": ["concurso universitario de software libre", "crónica", "cusl7"], "cat": ["Concurso Universitario de Software Libre", "Concursos", "Cronica"]}
+{"autor": ["Renato Luis Ramirez Rivero"], "titulo": ["Lo que se puede aprender en un  hackatón de la OSL."], "tag": [], "cat": ["Hackathon", "Uncategorized"]}
+{"autor": ["Serafín Vélez Barrera"], "titulo": ["El sabor de los exámenes de certificación LPI"], "tag": ["examenes", "granada", "lpi"], "cat": ["Cronica", "Formación"]}
