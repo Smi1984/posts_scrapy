@@ -28,6 +28,8 @@ class PostsSpider(BaseSpider):
             elif len(it) > 1:
 				for aut in it:
 					aux.append(aut[i].encode('utf-8'))
+            else:
+				aux.append("".encode('utf-8'))
             item['titulo'] = aux              
             ########################################################
             aux = []
@@ -38,6 +40,8 @@ class PostsSpider(BaseSpider):
             elif len(it) > 1:
 				for aut in it:
 					aux.append(aut[i].encode('utf-8'))
+            else:
+				aux.append("".encode('utf-8'))
             item['autor'] = aux   
 				  		
 			########################################################		                      
@@ -49,7 +53,8 @@ class PostsSpider(BaseSpider):
             elif len(it) > 1:
 				for aut in it:
 					aux.append(aut.encode('utf-8'))
-					
+            else:
+				aux.append("".encode('utf-8'))					
             item['cat'] = aux  
             ########################################################					 
             
@@ -60,7 +65,8 @@ class PostsSpider(BaseSpider):
             elif len(it) > 1:
 				for aut in it:
 					aux.append(aut.encode('utf-8'))
-
+            else:
+				aux.append("".encode('utf-8'))
             item['tag'] = aux  
 	
             ########################################################	 
@@ -74,6 +80,8 @@ class PostsSpider(BaseSpider):
 				for aut in it:
 				    soup = BeautifulSoup(aut,from_encoding="utf-8")
 				    aux.append(soup.get_text().encode('utf-8'))	 					
+            else:
+				aux.append("".encode('utf-8'))
             item['contenido'] = aux   
 
             
