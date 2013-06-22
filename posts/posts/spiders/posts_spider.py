@@ -73,6 +73,7 @@ class PostsSpider(BaseSpider):
  
             aux =[]
             it = hxs.select("//div[@class='entry-content']").extract()
+
             if len(it) == 1: 
 				soup = BeautifulSoup(it[0],from_encoding="utf-8")
 				aux.append(soup.get_text().encode('utf-8'))	 

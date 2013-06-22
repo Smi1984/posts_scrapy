@@ -12,7 +12,7 @@ class JsonWriterPipeline(object):
         self.file = open('items.jl', 'wb')
 
     def process_item(self, item, spider):
-		
+        print item
         line = json.dumps(dict(item),encoding="utf-8",ensure_ascii=False ) + "\n"
         self.file.write(line)
         return item
@@ -47,7 +47,7 @@ class XmlExportPipelineWithTags(object):
         file.close()
 
     def process_item(self, item, spider):
-        if len(item['tag'])>0:
+        if item['tag'][0]!="":
 			self.exporter.export_item(item)
         return item
 
@@ -76,6 +76,14 @@ class XmlExportPipelineWithoutTags(object):
         file.close()
 
     def process_item(self, item, spider):
-        if len(item['tag'])==0:
+        print "______________________________------------------------__________"
+        print item['tag']
+        print len(item['tag'][0])
+        print type(item['tag'][0])
+
+        if item['tag'][0]=="":
+			print "---------------------------------------------------"
 			self.exporter.export_item(item)
+        else:
+			print "++++++++++++++++++++++++++++++++++++++++++++++++++"
         return item
