@@ -76,14 +76,7 @@ class XmlExportPipelineWithoutTags(object):
         file.close()
 
     def process_item(self, item, spider):
-        print "______________________________------------------------__________"
-        print item['tag']
-        print len(item['tag'][0])
-        print type(item['tag'][0])
 
         if item['tag'][0]=="":
-			print "---------------------------------------------------"
 			self.exporter.export_item(item)
-        else:
-			print "++++++++++++++++++++++++++++++++++++++++++++++++++"
         return item
